@@ -4,9 +4,9 @@ const app = express();
 
 app.use('/', require('./routes'));
 
-// This will connect to the MongoDB database using the connection function from db/connection.js
+// This will connect to the MongoDB database using first the connection function from db/connection.js, mongoose
 // disable it if using the other code. 
-connectdb();
+// connectdb();
 
 const port = 3000;
 
