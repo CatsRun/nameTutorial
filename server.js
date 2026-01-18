@@ -1,8 +1,16 @@
 const express = require('express');
+const connectdb = require('./db/connection');
 const app = express();
 
 app.use('/', require('./routes'));
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log('Web Server is listening at port ' + (process.env.PORT || 3000));
+// This will connect to the MongoDB database using the connection function from db/connection.js
+// disable it if using the other code. 
+connectdb();
+
+const port = 3000;
+
+// when the server starts it will print a msg to the console of what port it is listening on
+app.listen(process.env.PORT || port, () => {
+    console.log('Web Server is listening at port ' + (process.env.PORT || port));
 });
