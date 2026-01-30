@@ -1,8 +1,12 @@
-const router = require('express').Router();
 const express = require('express');
-// const { MongoClient, ServerApiVersion } = require('mongodb');
-// require('dotenv').config();
+const router = express.Router();
 
-router.get('/contacts', (req, res) => {
-    res.send('Contacts Home Page');
-});
+const contactsController = require('../controllers/contacts');
+
+router.get('/', contactsController.getAll);
+
+router.get('/:id', contactsController.getSingle);
+
+// add more routes here for post, put, delete, 
+
+module.exports = router;
