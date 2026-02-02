@@ -2,6 +2,17 @@
 GET http://localhost:3000/contacts
 GET https://basic-nodejs-express-framework.onrender.com/api-docs/
 
+POST http://localhost:3000/contacts
+{"firstName":"Annabeth", "lastName":"Murray", "favoriteColor":"Brown", "email":"anabeth@abct.com", "birthday":"07/01/2025"}
+
+PUT http://localhost:3000/contacts/698127020cac247253e53f40
+{"firstName":"Sammy", "lastName":"Murray", "favoriteColor":"Brown", "email":"anabeth@abct.com", "birthday":"07/01/2025"}
+
+DELETE POST http://localhost:3000/contacts
+
+
+DELETE http://localhost:3000/contacts
+
 /// on Render
 GET https://basic-nodejs-express-framework.onrender.com/contacts
 GET https://basic-nodejs-express-framework.onrender.com/api-docs 
