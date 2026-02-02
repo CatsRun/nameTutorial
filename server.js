@@ -5,11 +5,6 @@ const mongodb = require('./db/connect');
 const port = process.env.PORT || 3000;
 const app = express();
 
-// const swaggerUi = require('swagger-ui-express');
-// const swaggerDocument = require('./routes/swagger');
-
-// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-
 app
   .use(bodyParser.json())
   .use((req, res, next) => {

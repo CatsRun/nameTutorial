@@ -1,0 +1,7 @@
+/// localhost
+GET http://localhost:3000/contacts
+GET https://basic-nodejs-express-framework.onrender.com/api-docs/
+
+/// on Render
+GET https://basic-nodejs-express-framework.onrender.com/contacts
+GET https://basic-nodejs-express-framework.onrender.com/api-docs 
